@@ -15,9 +15,10 @@ class Backjoon
         else
         {
             day = (height - up) % (up - down) == 0 ?
-            day = (height - up) / (up - down) + 1 :
-            day = (height - up) / (up - down) + 2;
+            (height - up) / (up - down) + 1 :
+            (height - up) / (up - down) + 2;
         }
         Console.Write(day);
     }
+
 }
